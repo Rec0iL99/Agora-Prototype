@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.ActionBar
-import com.joel.agoraprototype.MainActivity
+import com.joel.agoraprototype.intro.IntroActivity
 import com.joel.agoraprototype.R
 
 class SplashActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         actionBar?.hide()
 
         Handler().postDelayed({
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashActivity, IntroActivity::class.java))
             finish()
         }, 4000)
 
