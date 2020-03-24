@@ -3,7 +3,7 @@
     //app colors
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
-    <color name="colorAccent">#DFF4DD</color>
+    <color name="colorAccent">#000000</color>
 
     //essential colors
     <color name="white">#FFFFFF</color>
