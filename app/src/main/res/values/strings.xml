@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Agora-Prototype</string>
 
-    <!-- strings used in intro -->
+    <!-- strings used in intro activity -->
+    <!-- strings used in buttons in intro activity -->
     <string name="skip">SKIP</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- strings used in welcome activity -->
+    <!-- strings used in buttons in welcome activity -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="facebook">Facebook</string>
+    <!-- strings used as content in welcome activity -->
+    <string name="welcome">Welcome</string>
+    <string name="welcome_quote">There is no such thing as a vote that doesnt matter. It all matters</string>
+    <string name="welcome_or_via">Or Via</string>
 </resources>

@@ -11,8 +11,8 @@ import androidx.appcompat.app.ActionBar
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
-import com.joel.agoraprototype.MainActivity
 import com.joel.agoraprototype.R
+import com.joel.agoraprototype.auth.WelcomeActivity
 import kotlinx.android.synthetic.main.activity_intro.*
 
 class IntroActivity : AppCompatActivity() {
@@ -73,12 +73,12 @@ class IntroActivity : AppCompatActivity() {
         })
 
         bt_skip.setOnClickListener {
-            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            startActivity(Intent(this@IntroActivity, WelcomeActivity::class.java))
             finish()
         }
 
         bt_get_started.setOnClickListener {
-            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            startActivity(Intent(this@IntroActivity, WelcomeActivity::class.java))
             finish()
         }
     }
