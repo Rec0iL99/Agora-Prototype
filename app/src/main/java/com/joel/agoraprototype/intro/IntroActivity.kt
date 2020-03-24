@@ -3,6 +3,7 @@ package com.joel.agoraprototype.intro
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -58,11 +59,25 @@ class IntroActivity : AppCompatActivity() {
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                setCurrentIndicator(position)
+
+                //if it is last intro content show get started button or else show indicators
+                if ( position == 2 ) {
+                    bt_get_started.visibility = View.VISIBLE
+                    bt_skip.visibility = View.INVISIBLE
+                    indicator_container.visibility = View.INVISIBLE
+                } else {
+                    setCurrentIndicator(position)
+                }
+
             }
         })
 
         bt_skip.setOnClickListener {
+            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            finish()
+        }
+
+        bt_get_started.setOnClickListener {
             startActivity(Intent(this@IntroActivity, MainActivity::class.java))
             finish()
         }
