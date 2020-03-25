@@ -30,7 +30,6 @@ class IntroSliderAdapter(private val introSlides: List<IntroSlideContent>)
     }
 
     inner class IntroSlideViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
         private val titleText = view.findViewById<TextView>(R.id.intro_title)
         private val descText = view.findViewById<TextView>(R.id.intro_desc)
         private val illustration = view.findViewById<ImageView>(R.id.intro_image)
@@ -40,7 +39,6 @@ class IntroSliderAdapter(private val introSlides: List<IntroSlideContent>)
             descText.text = introSlide.description
             illustration.setImageResource(introSlide.illustration)
         }
-
     }
 
 }
