@@ -1,31 +1,27 @@
-package com.joel.agoraprototype.login
+package com.joel.agoraprototype.signup
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.ActionBar
 import com.joel.agoraprototype.R
-import com.joel.agoraprototype.twoStepAuth.TwoStepAuth
-import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
-class LoginActivity : AppCompatActivity() {
-
+class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-
+        setContentView(R.layout.activity_sign_up)
         customActionBar()
 
-        //onclick for login -> opens otp verification
-        bt_login.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, TwoStepAuth::class.java))
-        }
+        //setting the spinner (dropdown menu) for security question
+        var securityQuestions = resources.getStringArray(R.array.security_questions)
+        spinner_security_question.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, securityQuestions)
     }
 
     //function to modify actionbar
     private fun customActionBar() {
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.title = "Login"
+        actionBar?.title = "Sign Up"
         actionBar?.elevation = 0F
         actionBar?.setHomeAsUpIndicator(R.drawable.back_button)
         actionBar?.setDisplayHomeAsUpEnabled(true)

@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.joel.agoraprototype.login.LoginActivity
-import com.joel.agoraprototype.MainActivity
 import com.joel.agoraprototype.R
+import com.joel.agoraprototype.signup.SignUpActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class WelcomeActivity : AppCompatActivity() {
         actionBar?.hide()
 
         bt_welcome_sign_up.setOnClickListener {
-            startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
+            startActivity(Intent(this@WelcomeActivity, SignUpActivity::class.java))
         }
 
         bt_welcome_login.setOnClickListener {

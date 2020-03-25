@@ -9,7 +9,7 @@
     tools:context=".login.LoginActivity">
 
     <Button
-        android:id="@+id/bt_welcome_login"
+        android:id="@+id/bt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
@@ -68,7 +68,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_welcome_login"
+        app:layout_constraintBottom_toTopOf="@+id/bt_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +88,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_welcome_login" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

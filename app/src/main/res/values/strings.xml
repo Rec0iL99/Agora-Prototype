@@ -16,4 +16,14 @@
     <string name="resend_otp">Resend OTP</string>
     <string name="enter_otp">Enter OTP</string>
     <string name="verify">Verify</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="answer">Answer</string>
+    <string name="signup_instruction">Fill in the details and create your account now</string>
+    
+    <!-- security questions for sign up -->
+    <string-array name="security_questions">
+        <item>What was your childhood nickname?</item>
+        <item>In what city or town was your first job?</item>
+    </string-array>
 </resources>
