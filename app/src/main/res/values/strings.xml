@@ -20,7 +20,8 @@
     <string name="email">Email</string>
     <string name="answer">Answer</string>
     <string name="signup_instruction">Fill in the details and create your account now</string>
-    
+    <string name="send_link">Send Link</string>
+
     <!-- security questions for sign up -->
     <string-array name="security_questions">
         <item>What was your childhood nickname?</item>

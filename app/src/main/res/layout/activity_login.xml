@@ -82,7 +82,7 @@
         android:layout_marginBottom="64dp"
         android:gravity="center"
         android:text="@string/forgot_password"
-        android:textColor="@color/black"
+        android:textColor="@color/agoraGreen"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

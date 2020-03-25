@@ -1,36 +1,22 @@
-package com.joel.agoraprototype.login
+package com.joel.agoraprototype.forgotPassword
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
-import com.joel.agoraprototype.forgotPassword.ForgotPassword
 import com.joel.agoraprototype.R
-import com.joel.agoraprototype.twoStepAuth.TwoStepAuth
-import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity() {
+class ForgotPassword : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-
+        setContentView(R.layout.activity_forgot_password)
         customActionBar()
-
-        //onclick for login -> opens otp verification
-        bt_login.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, TwoStepAuth::class.java))
-        }
-
-        bt_forgot_password.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, ForgotPassword::class.java))
-        }
     }
 
     //function to modify actionbar
     private fun customActionBar() {
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.title = "Login"
+        actionBar?.title = "Forgot Password"
         actionBar?.elevation = 0F
         actionBar?.setHomeAsUpIndicator(R.drawable.back_button)
         actionBar?.setDisplayHomeAsUpEnabled(true)
