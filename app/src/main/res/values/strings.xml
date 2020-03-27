@@ -21,6 +21,12 @@
     <string name="answer">Answer</string>
     <string name="signup_instruction">Fill in the details and create your account now</string>
     <string name="send_link">Send Link</string>
+    <string name="home">Home</string>
+    <string name="election">Election</string>
+
+    //remove
+    <string name="election_fragment">Election Fragment</string>
+    <string name="home_fragment">Home Election</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">
