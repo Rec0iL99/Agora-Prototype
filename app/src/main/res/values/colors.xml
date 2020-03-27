@@ -11,6 +11,7 @@
     <color name="agoraGreen">#45A53B</color>
     <color name="agoraSecondaryText">#949494</color>
     <color name="agoraYellow">#FDD116</color>
+    <color name="agoraGreenFade">#BBDEB7</color>
     <color name="gray">#D8D8D8</color>
     <color name="facebook_blue">#1777F2</color>
 </resources>

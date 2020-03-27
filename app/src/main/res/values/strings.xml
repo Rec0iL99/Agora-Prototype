@@ -23,10 +23,13 @@
     <string name="send_link">Send Link</string>
     <string name="home">Home</string>
     <string name="election">Election</string>
+    <string name="your_elections">Your Elections</string>
+    <string name="total_elections">Total Elections</string>
 
     //remove
     <string name="election_fragment">Election Fragment</string>
     <string name="home_fragment">Home Election</string>
+    <string name="ten">10</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">
