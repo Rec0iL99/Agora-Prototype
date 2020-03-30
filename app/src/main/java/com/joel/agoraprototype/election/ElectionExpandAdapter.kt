@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
+import com.joel.agoraprototype.MainActivity
 import com.joel.agoraprototype.R
 
 class ElectionExpandAdapter(var context: Context,
@@ -19,7 +20,7 @@ class ElectionExpandAdapter(var context: Context,
     //TODO: have change the card
 
     private class ViewHolder(row: View?) {
-        var card: CardView
+        var card: ConstraintLayout
         var electionNumber: TextView
         var electionName: TextView
         var electionDesc: TextView
@@ -29,9 +30,9 @@ class ElectionExpandAdapter(var context: Context,
         var expandButton: Button
         var expandView: ConstraintLayout
         var electionCard: CardView
-
+        var options: TextView
         init {
-            this.card = row?.findViewById(R.id.election_card) as CardView
+            this.card = row?.findViewById(R.id.compressed_view) as ConstraintLayout
             this.electionNumber = row.findViewById(R.id.card_election_number) as TextView
             this.electionName = row.findViewById(R.id.card_election_name) as TextView
             this.electionCandidates = row.findViewById(R.id.card_election_candidates_content) as TextView
@@ -41,6 +42,7 @@ class ElectionExpandAdapter(var context: Context,
             this.expandButton = row.findViewById(R.id.bt_card_expand) as Button
             this.expandView = row.findViewById(R.id.expanded_view) as ConstraintLayout
             this.electionCard = row.findViewById(R.id.election_card) as CardView
+            this.options = row.findViewById(R.id.bt_card_options) as TextView
         }
     }
 

@@ -33,6 +33,11 @@
     <string name="end">End</string>
     <string name="candidates">Candidates</string>
     <string name="options">Options</string>
+    <string name="generate_voter_link">Generate Voter Link</string>
+    <string name="voters">Voters</string>
+    <string name="invite_voters">Invite Voters</string>
+    <string name="result">Result</string>
+    <string name="delete_election">Delete Election</string>
 
     //remove
     <string name="election_fragment">Election Fragment</string>

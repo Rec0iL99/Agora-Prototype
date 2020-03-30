@@ -10,10 +10,12 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
 import kotlinx.android.synthetic.main.agora_action_bar.view.*
+import kotlinx.android.synthetic.main.election_bottom_sheet.*
 
 class MainActivity : AppCompatActivity() {
 
