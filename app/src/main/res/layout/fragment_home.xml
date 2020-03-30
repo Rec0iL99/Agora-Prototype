@@ -15,6 +15,7 @@
         android:text="@string/your_elections"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="16dp"

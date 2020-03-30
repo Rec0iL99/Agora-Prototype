@@ -5,7 +5,7 @@
     android:id="@+id/action_bar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/white"
+    android:background="@drawable/border_actionbar"
     app:popupTheme="@style/AppTheme" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
