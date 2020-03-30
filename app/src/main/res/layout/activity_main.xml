@@ -16,6 +16,7 @@
         app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@drawable/bottom_nav_select_color"
         app:itemTextColor="@drawable/bottom_nav_select_color"
+        app:elevation="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
