@@ -13,6 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
+import kotlinx.android.synthetic.main.agora_action_bar.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity() {
 
     //function to modify actionbar
     private fun customActionBar() {
+        var toolbar: Toolbar = findViewById(R.id.main_custom_action_bar) as Toolbar
+        setSupportActionBar(toolbar)
         //here the username will replace 'Joel'
+        toolbar.action_bar_title.text = "Welcome, Joel"
     }
 }
