@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.FragmentManager
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
 import com.joel.agoraprototype.MainActivity
@@ -16,8 +17,6 @@ import com.joel.agoraprototype.R
 
 class ElectionExpandAdapter(var context: Context,
                             var electionDetails: ArrayList<ElectionDetails>): BaseAdapter() {
-
-    //TODO: have change the card
 
     private class ViewHolder(row: View?) {
         var card: ConstraintLayout

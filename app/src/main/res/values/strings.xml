@@ -38,6 +38,18 @@
     <string name="invite_voters">Invite Voters</string>
     <string name="result">Result</string>
     <string name="delete_election">Delete Election</string>
+    <string name="recoil">Rec0iL</string>
+    <string name="joel_email">joelmathewkoshy@gmail.com</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="about_agora">About Agora</string>
+    <string name="report_a_bug">Report A Bug</string>
+    <string name="share_agora">Share Agora with Others</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Navigation Drawer strings -->
+    <string name="nav_open">Drawer Open</string>
+    <string name="nav_close">Drawer Close</string>
 
     //remove
     <string name="election_fragment">Election Fragment</string>

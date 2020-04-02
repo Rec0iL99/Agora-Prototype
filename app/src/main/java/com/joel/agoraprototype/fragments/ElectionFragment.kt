@@ -16,7 +16,6 @@ class ElectionFragment() : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         var view: View = inflater.inflate(R.layout.fragment_election, container, false)
 
         var elections: ArrayList<ElectionDetails> = ArrayList()
