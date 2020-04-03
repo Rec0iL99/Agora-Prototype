@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            app:labelVisibilityMode="unlabeled"
+            app:labelVisibilityMode="labeled"
             app:itemIconTint="@drawable/bottom_nav_select_color"
             app:itemTextColor="@drawable/bottom_nav_select_color"
             app:elevation="16dp"
@@ -46,6 +46,74 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/botttom_nav_menu" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/extend_fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="32dp"
+            android:src="@drawable/election_white"
+            android:visibility="invisible"
+            app:backgroundTint="@color/agoraGreen"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/extend_fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/poll"
+            android:visibility="invisible"
+            app:backgroundTint="@color/agoraGreen"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@+id/extend_fab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/fab_create_election_text"
+            android:elevation="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/fab_text_bg"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:visibility="invisible"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/create_election"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/extend_fab2"
+            app:layout_constraintEnd_toStartOf="@+id/extend_fab2"
+            app:layout_constraintTop_toTopOf="@+id/extend_fab2" />
+
+        <TextView
+            android:id="@+id/fab_create_poll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="24dp"
+            android:background="@drawable/fab_text_bg"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:visibility="invisible"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/create_poll"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/extend_fab1"
+            app:layout_constraintEnd_toStartOf="@+id/extend_fab1"
+            app:layout_constraintTop_toTopOf="@+id/extend_fab1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -55,4 +123,22 @@
         app:menu="@menu/profile_drawer"
         android:layout_gravity="start"
         app:headerLayout="@layout/profile_drawer_header"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/main_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="32dp"
+            android:src="@drawable/add"
+            app:fabSize="mini"
+            app:backgroundTint="@color/agoraGreen" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

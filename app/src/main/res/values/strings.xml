@@ -22,7 +22,7 @@
     <string name="signup_instruction">Fill in the details and create your account now</string>
     <string name="send_link">Send Link</string>
     <string name="home">Home</string>
-    <string name="election">Election</string>
+    <string name="election">Elections</string>
     <string name="your_elections">Your Elections</string>
     <string name="total_elections">Total Elections</string>
     <string name="ten">10</string>
@@ -46,6 +46,8 @@
     <string name="share_agora">Share Agora with Others</string>
     <string name="contact_us">Contact Us</string>
     <string name="sign_out">Sign Out</string>
+    <string name="create_election">Create Election</string>
+    <string name="create_poll">Create Poll</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>

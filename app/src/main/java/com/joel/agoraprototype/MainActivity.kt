@@ -3,6 +3,9 @@ package com.joel.agoraprototype
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -20,8 +23,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     lateinit var snackbar : Snackbar
     lateinit var navController: NavController
-    lateinit var drawerLayout: DrawerLayout
     lateinit var navigationView: NavigationView
+    private var isOpen: Boolean = false
+    lateinit var openAnimation: Animation
+    lateinit var closeAnimation: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +42,27 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //bottom navigation
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         NavigationUI.setupWithNavController(bottom_navigation, navController)
+
+        //animation for fab
+        openAnimation = AnimationUtils.loadAnimation(this, R.anim.fab_open)
+        closeAnimation = AnimationUtils.loadAnimation(this, R.anim.fab_close)
+
+        //Floating action button
+        main_fab.setOnClickListener {
+            if (isOpen) {
+                extend_fab1.animation = closeAnimation
+                extend_fab2.animation = closeAnimation
+                fab_create_election_text.visibility = View.INVISIBLE
+                fab_create_poll_text.visibility = View.INVISIBLE
+                isOpen = false
+            } else {
+                extend_fab1.animation = openAnimation
+                extend_fab2.animation = openAnimation
+                fab_create_election_text.visibility = View.VISIBLE
+                fab_create_poll_text.visibility = View.VISIBLE
+                isOpen = true
+            }
+        }
     }
 
     //function to modify actionbar
