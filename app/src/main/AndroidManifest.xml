@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".createelection.CreateElectionFour"></activity>
+        <activity android:name=".createelection.CreateElectionThree" />
+        <activity android:name=".createelection.CreateElectionTwo" />
+        <activity android:name=".createelection.CreateElectionOne" />
         <activity android:name=".forgotPassword.ForgotPassword" />
         <activity android:name=".signup.SignUpActivity" />
         <activity android:name=".twoStepAuth.TwoStepAuth" />
@@ -22,8 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/CustomAction"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/CustomAction" />
     </application>
 
 </manifest>

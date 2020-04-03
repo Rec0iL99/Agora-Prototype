@@ -1,5 +1,6 @@
 package com.joel.agoraprototype
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,12 +10,12 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.joel.agoraprototype.createelection.CreateElectionOne
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
 import kotlinx.android.synthetic.main.agora_action_bar.view.*
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         openAnimation = AnimationUtils.loadAnimation(this, R.anim.fab_open)
         closeAnimation = AnimationUtils.loadAnimation(this, R.anim.fab_close)
 
-        //Floating action button
+        //Floating action button main with animation
         main_fab.setOnClickListener {
             if (isOpen) {
                 extend_fab1.animation = closeAnimation
@@ -63,6 +64,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 isOpen = true
             }
         }
+
+        //create election fab
+        extend_fab2.setOnClickListener {
+            startActivity(Intent(this@MainActivity, CreateElectionOne::class.java))
+        }
+
     }
 
     //function to modify actionbar

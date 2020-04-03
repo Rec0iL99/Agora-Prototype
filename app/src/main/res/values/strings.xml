@@ -48,18 +48,39 @@
     <string name="sign_out">Sign Out</string>
     <string name="create_election">Create Election</string>
     <string name="create_poll">Create Poll</string>
+    <string name="election_name">Election Name</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="add_candidate">Add Candidate</string>
+    <string name="select_algo">Select Voting Algorithm</string>
+    <string name="no_description_algo">No description to show, please select a voting algorithm</string>
+    <string name="more_options">More Options</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="get_real_time_updates">Get real-time updates</string>
+    <string name="how_secret">How secret are your ballots?</string>
+    <string name="ballots_are_completely_secret_and_never_shown_to_anyone">Ballots are completely secret and never shown to anyone</string>
+    <string name="ballots_are_visible_only_to_me">Ballots are visible only to me</string>
+    <string name="ballots_are_visible_to_everyone_with_access_to_the_election">Ballots are visible to everyone with access to the election</string>
+    <string name="who_can_see_list_of_voters">Who can see the list of voters?</string>
+    <string name="create">Create</string>
+    <string name="everyone_with_access_to_the_election">Everyone with access to the election</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>
     <string name="nav_close">Drawer Close</string>
-
-    //remove
-    <string name="election_fragment">Election Fragment</string>
-    <string name="home_fragment">Home Election</string>
+    <string name="only_me">Only me</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">
         <item>What was your childhood nickname?</item>
         <item>In what city or town was your first job?</item>
+    </string-array>
+
+    <!-- algorithm for creation of election -->
+    <string-array name="algorithms">
+        <item>Majority</item>
+        <item>Egalitarian</item>
+        <item>Australian STV</item>
     </string-array>
 </resources>
