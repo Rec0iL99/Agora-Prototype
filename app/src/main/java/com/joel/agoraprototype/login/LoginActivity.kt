@@ -41,8 +41,10 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(Intent(this@LoginActivity, TwoStepAuth::class.java))
             }, 2000)
         } else {
-            snackbar = Snackbar.make(layout_login, "EditText errors", Snackbar.LENGTH_SHORT)
-            snackbar.show()
+            edit_password.setError("Password cannot be empty")
+            edit_password.requestFocus();
+            edit_username.setError("Username cannot be emoty")
+            edit_username.requestFocus();
         }
     }
 

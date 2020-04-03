@@ -45,8 +45,16 @@ class SignUpActivity : AppCompatActivity() {
                 sign_up_progress.visibility = View.INVISIBLE
             }, 2000)
         } else {
-            snackbar = Snackbar.make(layout_sign_up, "Replace with error text for edittext", Snackbar.LENGTH_SHORT)
-            snackbar.show()
+            edit_username_signup.setError("Username cannot be empty")
+            edit_username_signup.requestFocus()
+            edit_fullname_signup.setError("Name cannot be empty")
+            edit_fullname_signup.requestFocus()
+            edit_email_signup.setError("Email cannot be empty")
+            edit_email_signup.requestFocus()
+            edit_password_signup.setError("Password cannot be empty")
+            edit_password_signup.requestFocus()
+            edit_security_question_signup.setError("Security question answer cannot be empty")
+            edit_security_question_signup.requestFocus()
         }
     }
 

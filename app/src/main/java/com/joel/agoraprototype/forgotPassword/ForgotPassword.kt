@@ -34,8 +34,8 @@ class ForgotPassword : AppCompatActivity() {
                 snackbar.show()
             }, 2000)
         } else {
-            snackbar = Snackbar.make(layout_forgot_password, "You have a give a username", Snackbar.LENGTH_SHORT)
-            snackbar.show()
+            edit_forgot_password_username.setError("Username cannot be empty")
+            edit_forgot_password_username.requestFocus()
         }
     }
 

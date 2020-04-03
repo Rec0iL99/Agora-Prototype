@@ -36,8 +36,8 @@ class TwoStepAuth : AppCompatActivity() {
                 finish()
             }, 2000)
         } else {
-            snackBar = Snackbar.make(layout_two_step_verify, "OTP must be of 6 characters", Snackbar.LENGTH_SHORT)
-            snackBar.show()
+            edit_otp.setError("OTP number must be 6 characters")
+            edit_otp.requestFocus()
         }
     }
 
