@@ -65,11 +65,17 @@
     <string name="who_can_see_list_of_voters">Who can see the list of voters?</string>
     <string name="create">Create</string>
     <string name="everyone_with_access_to_the_election">Everyone with access to the election</string>
+    <string name="only_me">Only me</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="two_step_authentication">Two Step Authentication</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>
     <string name="nav_close">Drawer Close</string>
-    <string name="only_me">Only me</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">

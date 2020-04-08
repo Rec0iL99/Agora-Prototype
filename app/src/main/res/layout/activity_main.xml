@@ -122,7 +122,7 @@
         android:layout_height="match_parent"
         app:menu="@menu/profile_drawer"
         android:layout_gravity="start"
-        app:headerLayout="@layout/profile_drawer_header"/>
+        app:headerLayout="@layout/profile_drawer_header" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator_fab"

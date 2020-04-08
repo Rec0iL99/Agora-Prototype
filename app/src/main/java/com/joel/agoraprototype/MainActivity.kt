@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -96,6 +97,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        when (item.itemId) {
+            R.id.menu_profile_settings -> {
+                Toast.makeText(this, "hi", Toast.LENGTH_SHORT).show()
+            }
+        }
+        layout_main_activity.closeDrawer(GravityCompat.START)
+        return true
     }
 }
