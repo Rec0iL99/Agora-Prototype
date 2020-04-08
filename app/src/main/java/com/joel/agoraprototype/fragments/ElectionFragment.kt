@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.joel.agoraprototype.election.ElectionDetails
 import com.joel.agoraprototype.election.ElectionExpandAdapter
 import com.joel.agoraprototype.R
@@ -37,11 +38,14 @@ class ElectionFragment() : Fragment() {
                 "Justin Mathew\nJoel Mathew"
             )
         )
+        //this fragment manager is for the bottom sheet in election fragment
+        var fragmentManager: FragmentManager = parentFragmentManager
         var electionDetailsList = view.findViewById(R.id.list_expand_elections) as ListView
         electionDetailsList.adapter =
             ElectionExpandAdapter(
                 requireContext(),
-                elections
+                elections,
+                fragmentManager
             )
         return view
     }

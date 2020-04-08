@@ -12,11 +12,10 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentManager
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
-import com.joel.agoraprototype.MainActivity
 import com.joel.agoraprototype.R
 
 class ElectionExpandAdapter(var context: Context,
-                            var electionDetails: ArrayList<ElectionDetails>): BaseAdapter() {
+                            var electionDetails: ArrayList<ElectionDetails>, var fragmentManager: FragmentManager): BaseAdapter() {
 
     private class ViewHolder(row: View?) {
         var card: ConstraintLayout
@@ -62,6 +61,7 @@ class ElectionExpandAdapter(var context: Context,
         }
         var electionDetail: ElectionDetails = getItem(position) as ElectionDetails
         var temp = position + 1
+
         viewHolder.electionNumber.text = temp.toString()
         viewHolder.electionName.text = electionDetail.name
         viewHolder.electionDesc.text = electionDetail.desc
@@ -71,9 +71,11 @@ class ElectionExpandAdapter(var context: Context,
         viewHolder.expandButton.setOnClickListener {
            expandCardFn(viewHolder)
         }
-        viewHolder.card.setOnClickListener {
-            expandCardFn(viewHolder)
+        viewHolder.options.setOnClickListener {
+            val bottomSheet: ElectionBottomSheet = ElectionBottomSheet()
+            bottomSheet.show(fragmentManager, "BottomSheet")
         }
+
         return view as View
     }
 
