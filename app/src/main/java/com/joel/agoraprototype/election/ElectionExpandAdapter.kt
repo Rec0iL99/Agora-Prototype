@@ -71,6 +71,12 @@ class ElectionExpandAdapter(var context: Context,
         viewHolder.expandButton.setOnClickListener {
            expandCardFn(viewHolder)
         }
+        viewHolder.electionName.setOnClickListener {
+            expandCardFn(viewHolder)
+        }
+        viewHolder.electionNumber.setOnClickListener {
+            expandCardFn(viewHolder)
+        }
         viewHolder.options.setOnClickListener {
             val bottomSheet: ElectionBottomSheet = ElectionBottomSheet()
             bottomSheet.show(fragmentManager, "BottomSheet")
