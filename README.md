@@ -63,7 +63,7 @@ The home screen will have a pull down to refresh feature and the loading indicat
 
 **Feedback**
 
-<img src="ui-mockups/Feedback.png" height="500"/>
-
 * Feedback is very important for any app, this can help us improve our app.
 * The user will be redirected to play store where he/she can submit a review on Agora.
+
+<img src="ui-mockups/Feedback.png" height="500"/>
