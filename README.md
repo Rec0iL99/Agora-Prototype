@@ -37,6 +37,8 @@ For illustration I took content from the Aossie website.
 
 The home screen will have a pull down to refresh feature and the loading indicator will be below the appbar indicating to the user that the election details are being loaded.
 
+<img src="ui-mockups/ProgressIndicator.png" width="500"/>
+
 **Add Election**
 
 * The user will have to navigate through three screens where he/she has to set the election details.
@@ -57,6 +59,7 @@ The home screen will have a pull down to refresh feature and the loading indicat
 
 **Profile Settings Screen**
 
+<img src="ui-mockups/2 factor auth .png" height="500" />
 
 **Feedback**
 
