@@ -21,6 +21,7 @@ class ElectionExpandAdapter(var context: Context,
         var card: ConstraintLayout
         var electionNumber: TextView
         var electionName: TextView
+        var electionDeadline: TextView
         var electionDesc: TextView
         var electionStart: TextView
         var electionEnd: TextView
@@ -33,6 +34,7 @@ class ElectionExpandAdapter(var context: Context,
             this.card = row?.findViewById(R.id.compressed_view) as ConstraintLayout
             this.electionNumber = row.findViewById(R.id.card_election_number) as TextView
             this.electionName = row.findViewById(R.id.card_election_name) as TextView
+            this.electionDeadline = row.findViewById(R.id.card_election_deadline) as TextView
             this.electionCandidates = row.findViewById(R.id.card_election_candidates_content) as TextView
             this.electionDesc = row.findViewById(R.id.card_election_desc_content) as TextView
             this.electionStart = row.findViewById(R.id.card_election_start_content) as TextView
@@ -75,6 +77,9 @@ class ElectionExpandAdapter(var context: Context,
             expandCardFn(viewHolder)
         }
         viewHolder.electionNumber.setOnClickListener {
+            expandCardFn(viewHolder)
+        }
+        viewHolder.electionDeadline.setOnClickListener {
             expandCardFn(viewHolder)
         }
         viewHolder.options.setOnClickListener {
