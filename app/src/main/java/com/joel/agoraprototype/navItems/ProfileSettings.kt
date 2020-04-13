@@ -1,4 +1,4 @@
-package com.joel.agoraprototype.profileSetting
+package com.joel.agoraprototype.navItems
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

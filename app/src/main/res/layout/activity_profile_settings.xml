@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     android:background="@color/white"
-    tools:context=".profileSetting.ProfileSettings">
+    tools:context=".navItems.ProfileSettings">
 
     <ScrollView
         android:layout_width="match_parent"
