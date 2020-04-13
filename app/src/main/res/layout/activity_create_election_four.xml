@@ -10,7 +10,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -20,22 +25,22 @@
                 android:id="@+id/more_options_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/more_options"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="8dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
                 android:id="@+id/check_invite_voters"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/invite_voters"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="16dp"
                 android:buttonTint="@color/agoraGreen"
+                android:text="@string/invite_voters"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/more_options_text" />
 
@@ -43,10 +48,10 @@
                 android:id="@+id/check_real_time_updates"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/get_real_time_updates"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="8dp"
                 android:buttonTint="@color/agoraGreen"
+                android:text="@string/get_real_time_updates"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_invite_voters" />
 
@@ -54,23 +59,23 @@
                 android:id="@+id/how_secret_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/how_secret"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/check_real_time_updates"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="16dp" />
+                app:layout_constraintTop_toBottomOf="@id/check_real_time_updates" />
 
             <RadioGroup
                 android:id="@+id/secret_ballots_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
-                android:paddingRight="24dp"
                 android:paddingTop="16dp"
+                android:paddingRight="24dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/how_secret_text" >
+                app:layout_constraintTop_toBottomOf="@id/how_secret_text">
 
                 <RadioButton
                     android:id="@+id/completely_secret"
@@ -98,23 +103,23 @@
                 android:id="@+id/who_can_voters_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/who_can_see_list_of_voters"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/secret_ballots_group"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="16dp" />
+                app:layout_constraintTop_toBottomOf="@id/secret_ballots_group" />
 
             <RadioGroup
                 android:id="@+id/who_can_see_voters_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
-                android:paddingRight="24dp"
                 android:paddingTop="16dp"
+                android:paddingRight="24dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/who_can_voters_text" >
+                app:layout_constraintTop_toBottomOf="@id/who_can_voters_text">
 
                 <RadioButton
                     android:id="@+id/voter_visible_only_me"
@@ -133,31 +138,33 @@
 
             <Button
                 android:id="@+id/bt_prev4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/prev"
-                android:layout_marginTop="24dp"
-                android:textColor="@color/agoraGreen"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="16dp"
                 android:background="@drawable/agora_button2"
+                android:text="@string/prev"
+                android:textColor="@color/agoraGreen"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/bt_create4"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/who_can_see_voters_group" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/bt_create4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/agora_button"
                 android:text="@string/create"
                 android:textColor="@color/white"
-                android:background="@drawable/agora_button"
-                android:layout_marginTop="24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/bt_prev4"
-                app:layout_constraintTop_toBottomOf="@+id/who_can_see_voters_group" />
+                app:layout_constraintStart_toEndOf="@+id/bt_prev4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

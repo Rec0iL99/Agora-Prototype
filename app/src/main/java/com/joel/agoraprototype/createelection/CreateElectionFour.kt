@@ -29,7 +29,7 @@ class CreateElectionFour : AppCompatActivity() {
     //function to modify actionbar
     private fun customActionBar() {
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.title = "Add Election"
+        actionBar?.title = "Select Options"
         actionBar?.elevation = 0F
         actionBar?.setHomeAsUpIndicator(R.drawable.close)
         actionBar?.setDisplayHomeAsUpEnabled(true)
