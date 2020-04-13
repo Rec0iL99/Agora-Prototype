@@ -11,12 +11,14 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.joel.agoraprototype.createelection.CreateElectionOne
+import com.joel.agoraprototype.profileSetting.ProfileSettings
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
 import kotlinx.android.synthetic.main.agora_action_bar.view.*
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var isOpen: Boolean = false
     lateinit var openAnimation: Animation
     lateinit var closeAnimation: Animation
+    lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,32 +80,35 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun customActionBar() {
         var toolbar: Toolbar = findViewById(R.id.main_custom_action_bar) as Toolbar
         setSupportActionBar(toolbar)
+        actionBar?.setDisplayHomeAsUpEnabled(true)
         //here the username will replace 'Joel'
         toolbar.action_bar_title.text = "Welcome, Joel"
         toolbar.action_bar_profile_pic.setOnClickListener {
             //sliding profile menu
             navigationView = findViewById(R.id.profile_sliding_drawer)
-            layout_main_activity.openDrawer(GravityCompat.START)
+            drawerLayout = findViewById(R.id.layout_main_activity)
+            drawerLayout.openDrawer(GravityCompat.START)
             var actionBarDrawerToggle: ActionBarDrawerToggle = ActionBarDrawerToggle(
                 this,
-                layout_main_activity,
+                drawerLayout,
                 action_bar,
                 R.string.nav_open,
                 R.string.nav_close
             )
-            layout_main_activity.addDrawerListener(actionBarDrawerToggle)
+            drawerLayout.addDrawerListener(actionBarDrawerToggle)
             actionBarDrawerToggle.syncState()
             navigationView.setNavigationItemSelectedListener(this)
         }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.menu_profile_settings -> {
-                Toast.makeText(this, "hi", Toast.LENGTH_SHORT).show()
-            }
+        when(item.itemId) {
+            R.id.menu_profile_settings -> startActivity(Intent(this@MainActivity, ProfileSettings::class.java))
         }
-        layout_main_activity.closeDrawer(GravityCompat.START)
+        item.setChecked(true)
+        drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
 }
+
+

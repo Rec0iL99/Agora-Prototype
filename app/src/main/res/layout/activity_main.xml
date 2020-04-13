@@ -116,14 +116,6 @@
             app:layout_constraintTop_toTopOf="@+id/extend_fab1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/profile_sliding_drawer"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:menu="@menu/profile_drawer"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/profile_drawer_header" />
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator_fab"
         android:layout_width="match_parent"
@@ -141,4 +133,12 @@
             app:fabSize="mini"
             app:backgroundTint="@color/agoraGreen" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/profile_sliding_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/profile_drawer"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/profile_drawer_header" />
 </androidx.drawerlayout.widget.DrawerLayout>

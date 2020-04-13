@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/menu_profile_settings"
-        android:title="@string/profile_settings"
-        android:icon="@drawable/person_filled" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_profile_settings"
+            android:title="@string/profile_settings"
+            android:icon="@drawable/person_filled" />
 
-    <item
-        android:id="@+id/menu_about_agora"
-        android:title="@string/about_agora"
-        android:icon="@drawable/about" />
+        <item
+            android:id="@+id/menu_about_agora"
+            android:title="@string/about_agora"
+            android:icon="@drawable/about" />
 
-    <item
-        android:id="@+id/menu_report_bug"
-        android:title="@string/report_a_bug"
-        android:icon="@drawable/bug" />
+        <item
+            android:id="@+id/menu_report_bug"
+            android:title="@string/report_a_bug"
+            android:icon="@drawable/bug" />
 
-    <item
-        android:id="@+id/menu_share"
-        android:title="@string/share_agora"
-        android:icon="@drawable/share" />
+        <item
+            android:id="@+id/menu_share"
+            android:title="@string/share_agora"
+            android:icon="@drawable/share" />
 
-    <item
-        android:id="@+id/menu_contact"
-        android:title="@string/contact_us"
-        android:icon="@drawable/email_filled" />
+        <item
+            android:id="@+id/menu_contact"
+            android:title="@string/contact_us"
+            android:icon="@drawable/email_filled" />
 
-    <item
-        android:id="@+id/menu_sign_out"
-        android:title="@string/sign_out"
-        android:icon="@drawable/sign_out" />
+        <item
+            android:id="@+id/menu_sign_out"
+            android:title="@string/sign_out"
+            android:icon="@drawable/sign_out" />
+    </group>
 </menu>
