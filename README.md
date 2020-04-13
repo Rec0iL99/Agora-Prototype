@@ -11,12 +11,18 @@ Agora Vote UI prototype for GSoC prototype.
 
 **Splash Screen**
 
+<img src="ui-mockups/SplashScreen.png" height="500" />
+
 **Intro Screens**
 
 The intro screeens will only be shown the first time the app is installed. First time users will have an idea what the apps does and how the app can help them.
 For illustration I took content from the Aossie website.
 
+<img src="ui-mockups/IntroScreens.png" />
+
 **Authentication Screens**
+
+<img src="ui-mockups/AuthScreens.png" />
 
 **Main Screens**
 
@@ -27,7 +33,11 @@ For illustration I took content from the Aossie website.
 * The election details will be displayed in a card with a expand option to view more details. When the user clicks on OPTIONS in the expanded card a bottom sheet will appear with options to invite voters, add voters, view result and delete election.
 * The reason I used expanded cards is to avoid having a complete new screen just for showing the extra election details and options.
 
+<img src="ui-mockups/HomeScreen Updated.png" />
+
 The home screen will have a pull down to refresh feature and the loading indicator will be below the appbar indicating to the user that the election details are being loaded.
+
+<img src="ui-mockups/ProgressIndicator.png" width="500"/>
 
 **Add Election**
 
@@ -36,6 +46,8 @@ The home screen will have a pull down to refresh feature and the loading indicat
 * The next button will only be enabled if the user enters mandatory fields (button with green border and no fill)
 * If the user in the middle wants to cancel the election creation by clicking on the cancel button in AppBar, a confirmation dialog pops to confirm the decision in order to avoid mistake cancellation.
 
+<img src="ui-mockups/AddElectionScreen.png" />
+
 **Cast Vote**
 
 * The first screen briefs the user on the details of the election.
@@ -43,9 +55,15 @@ The home screen will have a pull down to refresh feature and the loading indicat
 * The Vote button will be disabled if the user's ballot is empty.
 * After the user gives the vote,the final screen will allow the user to share the Agora with others.
 
+<img src="ui-mockups/CastVoteScreen.png" />
+
 **Profile Settings Screen**
+
+<img src="ui-mockups/2 factor auth .png" height="500" />
 
 **Feedback**
 
 * Feedback is very important for any app, this can help us improve our app.
 * The user will be redirected to play store where he/she can submit a review on Agora.
+
+<img src="ui-mockups/Feedback.png" height="500"/>
