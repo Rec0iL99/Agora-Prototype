@@ -139,6 +139,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/profile_drawer"
+        app:itemIconTint="@drawable/drawer_item"
+        app:itemTextColor="@drawable/drawer_item"
         android:layout_gravity="start"
         app:headerLayout="@layout/profile_drawer_header" />
 </androidx.drawerlayout.widget.DrawerLayout>
