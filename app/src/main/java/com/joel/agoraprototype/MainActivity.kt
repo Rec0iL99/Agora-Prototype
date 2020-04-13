@@ -1,5 +1,6 @@
 package com.joel.agoraprototype
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +8,9 @@ import android.view.MenuItem
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -17,6 +20,7 @@ import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.joel.agoraprototype.createelection.CreateElectionOne
+import com.joel.agoraprototype.createpoll.CreatePollOne
 import com.joel.agoraprototype.navItems.ProfileSettings
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
@@ -71,6 +75,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //create election fab
         extend_fab2.setOnClickListener {
             startActivity(Intent(this@MainActivity, CreateElectionOne::class.java))
+        }
+
+        //create poll fab
+        extend_fab1.setOnClickListener {
+            startActivity(Intent(this@MainActivity, CreatePollOne::class.java))
         }
 
     }

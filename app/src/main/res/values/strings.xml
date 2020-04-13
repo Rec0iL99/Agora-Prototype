@@ -73,6 +73,7 @@
     <string name="change_password">Change Password</string>
     <string name="two_step_authentication">Two Step Authentication</string>
     <string name="test_variable">Test</string>
+    <string name="poll_name">Poll Name</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>
