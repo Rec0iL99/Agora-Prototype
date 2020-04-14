@@ -74,10 +74,20 @@
     <string name="two_step_authentication">Two Step Authentication</string>
     <string name="test_variable">Test</string>
     <string name="poll_name">Poll Name</string>
+    <string name="about_agora_content_one">Agora vote is a voting platform where users can create elections and invite friends to cast their votes</string>
+    <string name="about_agora_content_two">It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few</string>
+    <string name="version">Version</string>
+    <string name="version_count">1.0</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>
     <string name="nav_close">Drawer Close</string>
+    <string name="connect_with_us">Connect with us</string>
+    <string name="twitter">Twitter</string>
+    <string name="gitlab">Gitlab</string>
+    <string name="gitter">Gitter</string>
+    <string name="aossie">AOSSIE</string>
+    <string name="developed_with_love">Developed ❤️ with by AOSSIE</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">

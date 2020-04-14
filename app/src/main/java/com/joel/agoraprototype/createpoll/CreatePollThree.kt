@@ -31,7 +31,7 @@ class CreatePollThree : AppCompatActivity() {
     //function to modify actionbar
     private fun customActionBar() {
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.title = "Add Poll"
+        actionBar?.title = "Select Voting Algorithm"
         actionBar?.elevation = 0F
         actionBar?.setHomeAsUpIndicator(R.drawable.close)
         actionBar?.setDisplayHomeAsUpEnabled(true)

@@ -26,7 +26,7 @@ class CreatePollTwo : AppCompatActivity() {
     //function to modify actionbar
     private fun customActionBar() {
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.title = "Add Poll"
+        actionBar?.title = "Add Candidates"
         actionBar?.elevation = 0F
         actionBar?.setHomeAsUpIndicator(R.drawable.close)
         actionBar?.setDisplayHomeAsUpEnabled(true)

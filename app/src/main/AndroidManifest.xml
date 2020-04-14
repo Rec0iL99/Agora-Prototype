@@ -9,24 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".createpoll.CreatePollFour"
+        <activity android:name=".navItems.AboutAgora"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".createpoll.CreatePollFour"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createpoll.CreatePollThree"
+        <activity
+            android:name=".createpoll.CreatePollThree"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createpoll.CreatePollTwo"
+        <activity
+            android:name=".createpoll.CreatePollTwo"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createpoll.CreatePollOne"
+        <activity
+            android:name=".createpoll.CreatePollOne"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".navItems.ProfileSettings"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createelection.CreateElectionFour"
+        <activity
+            android:name=".createelection.CreateElectionFour"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createelection.CreateElectionThree"
+        <activity
+            android:name=".createelection.CreateElectionThree"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createelection.CreateElectionTwo"
+        <activity
+            android:name=".createelection.CreateElectionTwo"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".createelection.CreateElectionOne"
+        <activity
+            android:name=".createelection.CreateElectionOne"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".forgotPassword.ForgotPassword" />
         <activity android:name=".signup.SignUpActivity" />
