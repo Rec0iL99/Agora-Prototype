@@ -5,4 +5,5 @@ object AppConstants {
     const val gitterLink = "https://gitter.im/AOSSIE/Agora-Android"
     const val twitterLink = "https://twitter.com/aossie_org"
     const val aossieWebsiteLink = "https://aossie.gitlab.io/"
+    const val googlePlayLink = "https://play.google.com/store/apps/details?id="
 }
