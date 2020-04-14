@@ -8,6 +8,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <HorizontalScrollView
+        android:layout_marginTop="8dp"
+        android:scrollbars="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_gravity="center"
+            app:singleLine="true"
+            app:singleSelection="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/active_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:checked="true"
+                app:chipStrokeWidth="2dp"
+                app:chipStrokeColor="@color/agoraSecondaryText"
+                app:chipBackgroundColor="@drawable/chip_bg"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:theme="@style/Theme.MaterialComponents.Light" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pending_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:gravity="center"
+                app:chipStrokeWidth="2dp"
+                app:chipStrokeColor="@color/agoraSecondaryText"
+                app:chipBackgroundColor="@drawable/chip_bg"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:theme="@style/Theme.MaterialComponents.Light" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/finished_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/finished"
+                android:padding="8dp"
+                android:gravity="center"
+                app:chipStrokeWidth="2dp"
+                app:chipStrokeColor="@color/agoraSecondaryText"
+                app:chipBackgroundColor="@drawable/chip_bg"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:theme="@style/Theme.MaterialComponents.Light" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
     <ListView
         android:id="@+id/list_expand_elections"
         android:layout_width="match_parent"

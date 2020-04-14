@@ -78,16 +78,19 @@
     <string name="about_agora_content_two">It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few</string>
     <string name="version">Version</string>
     <string name="version_count">1.0</string>
-
-    <!-- Navigation Drawer strings -->
-    <string name="nav_open">Drawer Open</string>
-    <string name="nav_close">Drawer Close</string>
     <string name="connect_with_us">Connect with us</string>
     <string name="twitter">Twitter</string>
     <string name="gitlab">Gitlab</string>
     <string name="gitter">Gitter</string>
     <string name="aossie">AOSSIE</string>
     <string name="developed_with_love">Developed ❤️ with by AOSSIE</string>
+    <string name="active">Active</string>
+    <string name="pending">Pending</string>
+    <string name="finished">Finished</string>
+
+    <!-- Navigation Drawer strings -->
+    <string name="nav_open">Drawer Open</string>
+    <string name="nav_close">Drawer Close</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">

@@ -32,7 +32,9 @@ class TwoStepAuth : AppCompatActivity() {
             //to simulate otp verification
             Handler().postDelayed({
                 otp_verfication_progress.visibility = View.INVISIBLE
-                startActivity(Intent(this@TwoStepAuth, MainActivity::class.java))
+                var intent: Intent = Intent(this@TwoStepAuth, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
                 finish()
             }, 2000)
         } else {
