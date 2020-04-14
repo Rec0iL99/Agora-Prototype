@@ -1,13 +1,14 @@
 package com.joel.agoraprototype
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -16,10 +17,12 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.joel.agoraprototype.auth.WelcomeActivity
 import com.joel.agoraprototype.createelection.CreateElectionOne
 import com.joel.agoraprototype.createpoll.CreatePollOne
 import com.joel.agoraprototype.navItems.AboutAgora
 import com.joel.agoraprototype.navItems.ProfileSettings
+import com.joel.agoraprototype.utilities.AppConstants
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.agora_action_bar.*
 import kotlinx.android.synthetic.main.agora_action_bar.view.*
@@ -111,6 +114,35 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when(item.itemId) {
             R.id.menu_profile_settings -> startActivity(Intent(this@MainActivity, ProfileSettings::class.java))
             R.id.menu_about_agora -> startActivity(Intent(this@MainActivity, AboutAgora::class.java))
+            R.id.menu_share -> {
+                val shareIntent = Intent(Intent.ACTION_SEND)
+
+                //Get the app link in the Play Store
+                //Get the app link in the Play Store
+                val appPackageName = applicationContext.packageName
+                val strAppLink: String
+                strAppLink = try {
+                    AppConstants.googlePlayLink+appPackageName
+                } catch (activityNotFound: ActivityNotFoundException) {
+                    AppConstants.googlePlayLink+appPackageName
+                }
+
+                // This is the sharing part
+                // This is the sharing part
+                shareIntent.type = "text/link"
+                val shareBody =
+                    "Hey! Download Agora Vote application for Free and create Elections right now" +
+                            "\n" + "" + strAppLink
+                val shareSub = "APP NAME/TITLE"
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, shareSub)
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody)
+                startActivity(Intent.createChooser(shareIntent, "Share Agora Vote Using"))
+            }
+            R.id.menu_sign_out -> {
+                var intent: Intent = Intent(this@MainActivity, WelcomeActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
         }
         item.setChecked(true)
         drawerLayout.closeDrawer(GravityCompat.START)
