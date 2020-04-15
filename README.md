@@ -4,6 +4,7 @@ Agora Vote UI prototype for GSoC prototype.
 <a href="https://gitlab.com/aossie/agora-android/-/merge_requests/202">UI Mockups</a>
 
 **Libraries I used in the prototype**
+
 <a href="https://github.com/GrenderG/Toasty">Toasty</a>
 <a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
 
