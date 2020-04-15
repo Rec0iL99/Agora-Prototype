@@ -3,6 +3,10 @@ Agora Vote UI prototype for GSoC prototype.
 
 <a href="https://gitlab.com/aossie/agora-android/-/merge_requests/202">UI Mockups</a>
 
+**Libraries I used in the prototype**
+<a href="https://github.com/GrenderG/Toasty">Toasty</a>
+<a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
+
 **App Theme**
 
 * The app theme is kept light since it is the UI trend nowadays in android material design with shades of green(#45A53B) for buttons, relevant text, etc.
