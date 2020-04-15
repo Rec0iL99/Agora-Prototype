@@ -9,7 +9,7 @@ It is a debug build (and not final) (for latest changes, clone repo and build th
 **Plan for CI/CD with Google Play**
 * When the deploy branch is merged into the master branch using fastlane a production ready apk sent to Google Play console.
 * <a href=".gitlab-ci.yml">CI Config file (its just for illustration and is not complete)</a>
-* Tools to be used (GitLab CI, Fastlane, Gradle, Fabric Beta and Google Play Console)
+* Tools to be used (GitLab CI, Fastlane, Gradle and Google Play Console)
 
 **Libraries I used in the prototype**
 
