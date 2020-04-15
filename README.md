@@ -6,6 +6,7 @@ Agora Vote UI prototype for GSoC prototype.
 **Libraries I used in the prototype**
 
 <a href="https://github.com/GrenderG/Toasty">Toasty</a>
+
 <a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
 
 **App Theme**
