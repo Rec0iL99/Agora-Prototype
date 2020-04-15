@@ -3,6 +3,15 @@ Agora Vote UI prototype for GSoC prototype.
 
 <a href="https://gitlab.com/aossie/agora-android/-/merge_requests/202">UI Mockups</a>
 
+<a href="https://appetize.io/app/1a2uub7n3cj7evxk1haez981ug?device=pixel4&scale=75&orientation=portrait&osVersion=10.0">App demo (Appetize) </a>
+It is a debug build (and not final) (for latest changes, please clone repo and build the app)
+
+**Libraries I used in the prototype**
+
+<a href="https://github.com/GrenderG/Toasty">Toasty</a>
+
+<a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
+
 **App Theme**
 
 * The app theme is kept light since it is the UI trend nowadays in android material design with shades of green(#45A53B) for buttons, relevant text, etc.
