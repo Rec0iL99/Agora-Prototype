@@ -1,8 +1,9 @@
-package com.joel.agoraprototype
+package com.joel.agoraprototype.moreinfo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import com.joel.agoraprototype.R
 import kotlinx.android.synthetic.main.activity_more_info.*
 
 class MoreInfoActivity : AppCompatActivity() {
