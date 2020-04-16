@@ -87,6 +87,7 @@
     <string name="active">Active</string>
     <string name="pending">Pending</string>
     <string name="finished">Finished</string>
+    <string name="add_election">Add Election</string>
 
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>

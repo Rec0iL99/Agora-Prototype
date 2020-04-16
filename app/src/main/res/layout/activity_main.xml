@@ -130,8 +130,10 @@
             android:layout_gravity="bottom|center"
             android:layout_margin="32dp"
             android:src="@drawable/add"
-            app:fabSize="mini"
-            app:backgroundTint="@color/agoraGreen" />
+            android:textColor="@color/white"
+            android:text="@string/add_election"
+            app:backgroundTint="@color/agoraGreen"
+            app:fabSize="mini" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
