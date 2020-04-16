@@ -33,16 +33,6 @@ class ElectionBottomSheet : BottomSheetDialogFragment() {
             dismiss()
         }
 
-        view.bt_invite_voters.setOnClickListener {
-            context!!.toastSuccess("invite voters dialog")
-            dismiss()
-        }
-
-        view.bt_voters.setOnClickListener {
-            context!!.toastSuccess("fetch voters from api")
-            dismiss()
-        }
-
         view.bt_delete_election.setOnClickListener {
             context!!.toastSuccess("delete election")
             dismiss()
