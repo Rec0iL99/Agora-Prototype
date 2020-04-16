@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td><kbd><img src="p-screenshots/otp.png"></kbd></td>
-    <td><kbd><img src="p-screenshots/intro2.png"></kbd></td>
+    <td><kbd><img src="p-screenshots/signUp.png"></kbd></td>
     <td><kbd><img src="p-screenshots/home.png"></kbd></td>
     <td><kbd><img src="p-screenshots/profileSlide.png"></kbd></td>
   </tr>
