@@ -23,19 +23,13 @@ class ElectionFragment() : Fragment() {
         elections.add(
             ElectionDetails(
                 "Election 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris justo, venenatis in tristique vitae, consectetur volutpat augue. Integer non dui suscipit, vulputate libero quis",
-                "05/03/2020 15:03PM",
-                "08/03/2020 14:30PM",
-                "Justin Mathew\nJoel Mathew"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris justo, venenatis in tristique vitae, consectetur volutpat augue. Integer non dui suscipit, vulputate libero quis"
             )
         )
         elections.add(
             ElectionDetails(
                 "Election 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris justo, venenatis in tristique vitae, consectetur volutpat augue. Integer non dui suscipit, vulputate libero quis",
-                "05/03/2020 15:03PM",
-                "08/03/2020 14:30PM",
-                "Justin Mathew\nJoel Mathew"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris justo, venenatis in tristique vitae, consectetur volutpat augue. Integer non dui suscipit, vulputate libero quis"
             )
         )
         //this fragment manager is for the bottom sheet in election fragment

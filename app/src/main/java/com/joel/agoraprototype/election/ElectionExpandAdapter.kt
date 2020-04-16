@@ -23,9 +23,6 @@ class ElectionExpandAdapter(var context: Context,
         var electionName: TextView
         var electionDeadline: TextView
         var electionDesc: TextView
-        var electionStart: TextView
-        var electionEnd: TextView
-        var electionCandidates: TextView
         var expandButton: Button
         var expandView: ConstraintLayout
         var electionCard: CardView
@@ -35,10 +32,7 @@ class ElectionExpandAdapter(var context: Context,
             this.electionNumber = row.findViewById(R.id.card_election_number) as TextView
             this.electionName = row.findViewById(R.id.card_election_name) as TextView
             this.electionDeadline = row.findViewById(R.id.card_election_deadline) as TextView
-            this.electionCandidates = row.findViewById(R.id.card_election_candidates_content) as TextView
             this.electionDesc = row.findViewById(R.id.card_election_desc_content) as TextView
-            this.electionStart = row.findViewById(R.id.card_election_start_content) as TextView
-            this.electionEnd = row.findViewById(R.id.card_election_end_content) as TextView
             this.expandButton = row.findViewById(R.id.bt_card_expand) as Button
             this.expandView = row.findViewById(R.id.expanded_view) as ConstraintLayout
             this.electionCard = row.findViewById(R.id.election_card) as CardView
@@ -67,9 +61,6 @@ class ElectionExpandAdapter(var context: Context,
         viewHolder.electionNumber.text = temp.toString()
         viewHolder.electionName.text = electionDetail.name
         viewHolder.electionDesc.text = electionDetail.desc
-        viewHolder.electionStart.text = electionDetail.start
-        viewHolder.electionEnd.text = electionDetail.end
-        viewHolder.electionCandidates.text = electionDetail.candidates
         viewHolder.expandButton.setOnClickListener {
            expandCardFn(viewHolder)
         }
