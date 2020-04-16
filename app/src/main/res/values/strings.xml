@@ -91,6 +91,9 @@
     <!-- Navigation Drawer strings -->
     <string name="nav_open">Drawer Open</string>
     <string name="nav_close">Drawer Close</string>
+    <string name="ballot">Ballot</string>
+    <string name="view_more_information">View more information</string>
+    <string name="status">Status</string>
 
     <!-- security questions for sign up -->
     <string-array name="security_questions">
