@@ -3,6 +3,8 @@ Agora Vote UI prototype for GSoC prototype.
 
 <a href="https://gitlab.com/aossie/agora-android/-/merge_requests/202">UI Mockups</a>
 
+<a href="screenshots.md">Prototype Screenshots</a>
+
 <a href="https://appetize.io/app/1a2uub7n3cj7evxk1haez981ug?device=pixel4&scale=75&orientation=portrait&osVersion=10.0">App demo (Appetize) </a>
 It is a debug build (and not final) (for latest changes, clone repo and build the app)
 
