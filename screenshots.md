@@ -13,7 +13,7 @@
   </tr>
   <tr>
     <td><kbd><img src="p-screenshots/homeElection.png"></kbd></td>
-    <td><kbd><img src="p-screenshots/intro2.png"></kbd></td>
+    <td><kbd><img src="p-screenshots/electionFrag.png"></kbd></td>
     <td><kbd><img src="p-screenshots/bottomSheet.png"></kbd></td>
     <td><kbd><img src="p-screenshots/infoExpand.png"></kbd></td>
   </tr>
