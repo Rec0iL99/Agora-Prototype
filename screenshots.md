@@ -18,9 +18,12 @@
     <td><kbd><img src="p-screenshots/infoExpand.png"></kbd></td>
   </tr>
   <tr>
+    <td><kbd><img src="p-screenshots/infoExpand2.png"></kbd></td>
     <td><kbd><img src="p-screenshots/profileSettings.png"></kbd></td>
     <td><kbd><img src="p-screenshots/about.png"></kbd></td>
     <td><kbd><img src="p-screenshots/addPoll1.png"></kbd></td>
+  </tr>
+  <tr>
     <td><kbd><img src="p-screenshots/addPoll2.png"></kbd></td>
   </tr>
 </table>
