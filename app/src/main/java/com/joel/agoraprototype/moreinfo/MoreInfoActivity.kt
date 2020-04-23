@@ -15,7 +15,7 @@ class MoreInfoActivity : AppCompatActivity() {
 
         info_election_name_content.text = "Election 1"
         info_election_desc_content.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris justo, venenatis in tristique vitae, consectetur volutpat augue. Integer non dui suscipit, vulputate libero quis"
-        info_election_candidates_content.text = "Justin Mathew\nJoel Mathew"
+        info_election_candidates_content.text = "Justin John Mathew\nJoel Mathew"
         info_election_start_content.text = "Mon Apr 05/03/2020 15:03PM"
         info_election_end_content.text = "Tue Apr 06/03/2020 15:03PM"
         info_election_status_content.text = "Active"
